@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header
+{
+    background-color: green;
+    text-align: center;
+    margin: auto;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.header .container
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    
+}
+.header .container .search
+{
+    width: 300px;
+    padding: 0 20px;
+    font-size: 17px;
+    outline: none;
+    color: green;
+}
+.header .container .search::placeholder
+{
+    color: green;
+}
+.container
+{
+    width: 100vh;
+    margin: auto;
+}
+.items .container
+{
+  border: 1px solid rgba(128, 128, 128, 0.537);
+  padding: 20px;
+}
+.items .container form{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.items .container .submit
+{
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 5px;
+    border-radius: 2px;
+    width: 50px;
+}
+.items .container .text
+{
+    padding: 5px;
+}
+.items .container h2{
+    margin-bottom: 5px;
+}
+.items .container ul{
+    list-style: none;
+}
+.items .container ul li{
+    border: 1px solid rgba(128, 128, 128, 0.537);
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.items .container ul li button
+{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 7px;
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+}
